@@ -10,6 +10,7 @@ body {
   left: -50%; 
   width: 200%; 
   height: 200%;
+  z-index: -9999999;
 }
 #bg img {
   position: absolute; 
@@ -20,4 +21,5 @@ body {
   margin: auto; 
   min-width: 50%;
   min-height: 50%;
+  z-index: -9999999;
 }
