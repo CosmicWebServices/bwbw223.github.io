@@ -2,6 +2,7 @@ h1 {
 text-align: center;
 }
 body {
-  background-image: url(back.jpg);
   color: #ffffff;
+  background: url('back.jpg') no-repeat scroll;
+  background-size: 100% 100%;
 }
