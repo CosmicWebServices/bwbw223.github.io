@@ -3,5 +3,5 @@ text-align: center;
 }
 body {
   color: #ffffff;
-  background: url('back.jpg') no-repeat;
+  background: url('back.jpg') no-repeat scroll;
 }
