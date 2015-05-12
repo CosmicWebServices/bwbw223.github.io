@@ -23,3 +23,16 @@ body {
   min-height: 50%;
   z-index: -9999999;
 }
+
+::-webkit-scrollbar {
+    width: 9px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: transparent;
+    -webkit-transition: all 0.25s ease;
+}
+
+body {
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
