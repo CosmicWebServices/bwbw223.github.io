@@ -35,7 +35,7 @@
     var always = function() {
     prime(11000)
     document.getElementById("p").innerHTML = primes;
-    window.setTimeout(5000, always)
+    window.setTimeout(always, 6000)
     }
     prime(12000)
     document.body.innerHTML = document.body.innerHTML + "<p id='p'>" + primes + "</p>";
