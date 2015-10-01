@@ -14,8 +14,10 @@
     var primes = [2,3,5,7,11,13,17];
     var c4a = function(check) {
       for (i2 = 0; i2 < primes.length; i2++) {
-        if (check % primes[i2] !== 0) {
+        if (check > primes[i2]) {
+        if (check % primes[i2] === 0) {
           return false;
+        }
         }
       }
       return true;
