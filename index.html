@@ -34,11 +34,11 @@
     };
     var always = function() {
     prime(11000)
-    document.getElementById("p").innerHTML = primes.toString().replace(/,/, ", ");
+    document.getElementById("p").innerHTML = primes.toString().replace(/,/g, ", ");
     window.setTimeout(always, 6000)
     }
     prime(12000)
-    document.body.innerHTML = document.body.innerHTML + "<p id='p'>" + primes + "</p>";
+    document.body.innerHTML = document.body.innerHTML + "<p id='p'>" + primes.toString().replace(/,/g, ", ") + "</p>";
     always()
     </script>
   </body>
