@@ -10,52 +10,26 @@
       <img src="back.png">
     </div>
     <h1 class="tk-fira-sans">bwbw223's site</h1>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+    <script>
+    var primes = [2,3,5,7,11,13,17];
+    var c4a = function(check) {
+      for (i2 = 0; i2 < primes.length; i2++) {
+        if (check % primes[i2] !== 0) {
+          return false;
+        }
+      }
+      return true;
+    }
+    var prime = function(more) {
+      this.p = primes[primes.length - 1]
+      console.log(p)
+      for (i = 0; i < more; i++) {
+        this.p++
+        if (c4a(this.p)) {
+          primes.push(this.p);
+        }
+      }
+    };
+    </script>
   </body>
 </html>
