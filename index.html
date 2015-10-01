@@ -34,7 +34,7 @@
     };
     var always = function() {
     prime(11000)
-    document.getElementById("p").innerHTML = primes;
+    document.getElementById("p").innerHTML = primes.toString().replace(",", ", ");
     window.setTimeout(always, 6000)
     }
     prime(12000)
