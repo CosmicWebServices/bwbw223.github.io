@@ -9,8 +9,8 @@
     <div id="bg">
       <img src="back.png">
     </div>
-    <h1 class="tk-fira-sans">bwbw223's site</h1>
-    <input type="number" id="check"></input><button onclick="alert(c4a(document.getElementById('check').value))">check</button>
+    <h1 class="tk-fira-sans">Prime Numbers</h1>
+    <input type="number" id="check"></input><button onclick="alert(c4a(document.getElementById('check').value))">is Prime?</button>
     <script>
     var primes = [2];
     var c4a = function(check) {
@@ -32,8 +32,13 @@
         }
       }
     };
+    var always = function() {
     prime(11000)
-    document.body.innerHTML = document.body.innerHTML + "<p>" + primes + "</p>";
+    document.getElementById("p").innerHTML = primes;
+    window.setTimeout(5000, always)
+    }
+    prime(12000)
+    document.body.innerHTML = document.body.innerHTML + "<p id='p'>" + primes + "</p>";
     </script>
   </body>
 </html>
