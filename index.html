@@ -16,7 +16,7 @@
     var history = Parse.Object.extend("history");
     history.set('time', new Date().toUTCString());
     history.set('vendor', navigator.vendor);
-    gameScore.save(null, {
+    history.save(null, {
       success: function(gameScore) {
   },
   error: function(gameScore, error) {
