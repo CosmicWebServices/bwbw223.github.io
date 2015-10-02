@@ -12,16 +12,6 @@
     <input type="number" id="check"></input><button onclick="alert(c4a(document.getElementById('check').value))">is Prime?</button>
     <script src="//www.parsecdn.com/js/parse-1.6.4.min.js"></script>
     <script>
-    Parse.initialize("g34o49odNrRbfN2HLd0hOuvtjCsF0WPBeqF6eHFd", "XFL3oMGLq2aYQ4l5qxHde1fRabQ5DTNKbmM7ugBR");
-    var history = Parse.Object.extend("history");
-    history.set('time', new Date().toUTCString());
-    history.set('vendor', navigator.vendor);
-    history.save(null, {
-      success: function(gameScore) {
-  },
-  error: function(gameScore, error) {
-  }
-});
     var primes = [2];
     var c4a = function(check) {
       for (i2 = 0; i2 < primes.length; i2++) {
