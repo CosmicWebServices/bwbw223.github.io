@@ -11,12 +11,12 @@
     <h1 class="tk-fira-sans">Prime Numbers</h1>
     <input type="number" id="check"></input><button onclick="alert(c4a(document.getElementById('check').value))">is Prime?</button>
     <script>
-    var primes = [2, 3, 5];
+    var primes = [2];
     var c4a = function(check) {
       if (check < 2) {
         return false;
       }
-      this.sqrt = Math.sqrt(check)
+      this.sqrt = Math.round(Math.sqrt(check))
       for (i2 = 0; i2 < primes.length; i2++) {
         if (this.sqrt < primes[i]) {
           return false;
