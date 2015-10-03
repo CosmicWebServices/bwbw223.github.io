@@ -16,11 +16,8 @@
       if (check < 2) {
         return false;
       }
-      this.sqrt = Math.round(Math.sqrt(check)) + 1
       for (i2 = 0; i2 < primes.length; i2++) {
-        if (this.sqrt < primes[i]) {
-          return false;
-        } else if (check > primes[i2]) {
+        if (check > primes[i2]) {
         if (check % primes[i2] === 0) {
           return false;
         }
