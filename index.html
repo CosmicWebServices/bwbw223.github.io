@@ -13,6 +13,9 @@
     <script>
     var primes = [2];
     var c4a = function(check) {
+      if (check < 2) {
+        return false;
+      }
       for (i2 = 0; i2 < primes.length; i2++) {
         if (check > primes[i2]) {
         if (check % primes[i2] === 0) {
