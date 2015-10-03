@@ -22,8 +22,8 @@
           return false;
         }
         }
+      }
       return true;
-    }
     }
     var prime = function(more) {
       this.p = primes[primes.length - 1]
@@ -37,7 +37,7 @@
     var always = function() {
     prime(11000)
     document.getElementById("p").innerHTML = primes.toString().replace(/,/g, ", ");
-    window.setTimeout(always, 3500)
+    window.setTimeout(always, 3000)
     }
     prime(12000)
     document.body.innerHTML = document.body.innerHTML + "<p id='p'>" + primes.toString().replace(/,/g, ", ") + "</p>";
