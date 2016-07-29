@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+  <head>
+    <title>bwbw223's bitmap embedder</title>
+  </head>
+  <body>
+    <h1>bwbw223's Bitmap Embedder</h1>
+    <input type="file" accept="image/*" id="file">
+    <input type="button" onclick="embed()">
+    <iframe id="download" style="display:none;"></iframe>
+    <script>
+      var download = function(url) {
+        document.getElementById('download').src = url;
+      };
+      var embed = function() {
+        var output = URL.createObjectURL(document.getElementById("file").files[0]).href;
+        alert(output)
+      };
+    </script>
+  </body>
+</html>
