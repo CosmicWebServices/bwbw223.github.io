@@ -16,7 +16,7 @@
         var reader = new window.FileReader();
         reader.readAsDataURL(document.getElementById("file").files[0]);
         reader.onloadend = function() {
-          output = '<svg version="1.1" viewBox="-1 -1 2 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><image xmlns="http://www.w3.org/2000/svg" id="image1JPEG" x="0" y="0" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="' +
+          output = '<svg version="1.1" viewBox="-1 -1 2 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><image xmlns="http://www.w3.org/2000/svg" id="image1JPEG" x="-240" y="180" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="' +
           reader.result + '"/></svg>';                
           output = 'data:binary/octet-stream,' + encodeURIComponent(output);
           download(output)
